@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css reset -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- index style -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- base style -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <title>Hax School</title>
+  </head>
+  <style></style>
+
+  <body>
+    <!-- 最外部容器 -->
+    <div class="wrap">
+      <!-- 頭部 -->
+      <div class="head-wrapper">
+        <!-- 社群 -->
+        <ul class="group">
+          <li class="fb">
+            <a href="javascript:;"
+              ><img src="./img/facebookIcon.png" alt="fb" />粉絲團</a
+            >
+          </li>
+          <li class="short-line">|</li>
+          <li class="twitter">
+            <a href="javascript:;"
+              ><img src="./img/twitterIcon.png" alt="twitter" />追隨我們</a
+            >
+          </li>
+        </ul>
+        <!-- logo 導航條 -->
+        <div class="nav-bar w">
+          <!-- <h1><a href="/"><img src="./img/logo.png" alt="hax school logo"></a></h1> -->
+          <h1>hax school</h1>
+          <ul class="nav">
+            <li><a href="javascript:;">首頁</a></li>
+            <li><a href="javascript:;">產品介紹</a></li>
+            <li><a href="javascript:;">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 內容區 -->
+      <div class="content-wrapper w">
+        <!-- banner -->
+        <div class="banner bottom">
+          <!-- 圖片 -->
+          <img src="./img/banner.png" alt="banner" />
+          <!-- 文字 -->
+          <div>
+            <h3>六角學院<br />讓您奠定良好的前端基礎</h3>
+          </div>
+        </div>
+
+        <!-- 課程 -->
+        <ul class="course bottom">
+          <li>
+            <a href="javascript:;">
+              <div class="img-wrap">
+                <img src="./img/html.png" alt="html" />
+              </div>
+              <h2>HTML5 基礎教學</h2>
+              <p>
+                主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:;">
+              <div class="img-wrap"><img src="./img/rwd.png" alt="rwd" /></div>
+              <h2>響應式網站設計</h2>
+              <p>
+                響應式網站設計(Responsive web
+                design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開法技巧。
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:;">
+              <div class="img-wrap">
+                <img src="./img/jQuery.png" alt="jQuery" />
+              </div>
+              <h2>jQuery 實戰教學</h2>
+              <p>本課程有以下特色</p>
+              <ul>
+                <li>了解變數的使用方法</li>
+                <li>學習並操作DOM</li>
+                <li>學習基本數學運算方法</li>
+                <li>套件的操作及應用</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+
+        <!-- 比較表格 -->
+        <div class="compare-table w bottom">
+          <h3>線上即時體課程的差異</h3>
+          <!-- 表格 -->
+          <table>
+            <thead>
+              <tr>
+                <td class="item">項目</td>
+                <td>Hex School線上課程</td>
+                <td>一般線上課程</td>
+                <td>實體課程</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="item">費用</td>
+                <td class="green">較低</td>
+                <td class="green">較低</td>
+                <td>較高</td>
+              </tr>
+              <tr>
+                <td class="item">學習效果</td>
+                <td>一般</td>
+                <td class="green">較低</td>
+                <td class="green">很好</td>
+              </tr>
+              <tr>
+                <td class="item">Code review</td>
+                <td class="green">有</td>
+                <td>無</td>
+                <td>不一定</td>
+              </tr>
+              <tr>
+                <td class="item">課程更新速度</td>
+                <td class="green">普通</td>
+                <td class="green">普通</td>
+                <td>較慢</td>
+              </tr>
+              <tr>
+                <td class="item">多次複習</td>
+                <td class="green">可</td>
+                <td>可</td>
+                <td>不可</td>
+              </tr>
+              <tr>
+                <td class="item">字幕</td>
+                <td class="green">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 聯繫 -->
+        <div class="contact w">
+          <p>對我們的課程有興趣嗎？<br />&emsp;歡迎留下您的資料</p>
+          <form action="">
+            <div class="area">
+              <textarea rows="15" cols="60"></textarea>
+            </div>
+            <div class="self-info">
+              <span>姓名</span>
+              <input type="text" value="六角講師" />
+              <span>電話</span>
+              <input type="tel" name="phone" id="phone" value="0912345678" />
+              <span>信箱</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value="hexschool@mail.com"
+              />
+              <button type="submit">送出</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- 尾部 -->
+      <div class="footer-wrapper w">
+        <div class="footer">
+          <!-- logo -->
+          <div class="foot-logo">
+            <img src="./img/footerLogo.png" alt="logo" />
+          </div>
+          <!-- info -->
+          <ul class="hax-info">
+            <li>聯繫我們：<span>hexschool@gmail.com</span></li>
+            <li>電話：<span>0999123456</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

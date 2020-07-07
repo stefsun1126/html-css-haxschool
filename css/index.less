@@ -1,0 +1,273 @@
+// 頭部高80px 直接由子容器撐開
+.head-wrapper {
+  // 如果不加 看起來很黏不好看
+  margin-bottom: 1px;
+
+  .group {
+    background-color: rgb(246, 246, 246);
+    padding: 10px 20px 10px 0;
+
+    display: flex;
+    // 垂直置中
+    align-items: center;
+    // 靠右對齊
+    justify-content: flex-end;
+
+    li {
+      margin: 0 5px;
+    }
+
+    img {
+      vertical-align: bottom;
+      margin-right: 3px;
+    }
+
+    .twitter a {
+      color: #0eaeec;
+    }
+
+    .fb a {
+      color: #546da8;
+    }
+
+    .short-line {
+      color: #cccccc;
+    }
+  }
+
+  // logo 導航條
+  .nav-bar {
+    background-color: #ffffff;
+    display: flex;
+    // 將兩個子容器分開在左右兩邊
+    justify-content: space-between;
+
+    h1 {
+      background-image: url('./../img/logo.png');
+      text-indent: 101%;
+      width: 224px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    // 導航條
+    .nav {
+      width: 400px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+
+      li {
+        text-align: center;
+        width: 100px;
+        height: 100%;
+      }
+
+      a {
+        display: block;
+        color: #00cc99;
+
+        &:hover {
+          border-bottom: 2px solid #00cc99;
+          // 為了不要讓邊線影響到整體高度
+          box-sizing: border-box;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+// 內容區
+.content-wrapper {
+  // banner
+  .banner {
+    position: relative;
+    // margin-bottom: 64px;
+
+    div {
+      height: 160px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      // 垂直置中
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      font-size: 32px;
+      color: #ffffff;
+
+      h3 {
+        height: 64px;
+        position: absolute;
+        // 垂直置中
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        padding-left: 26px;
+      }
+    }
+  }
+
+  // 課程
+  .course {
+    display: flex;
+    justify-content: space-around;
+    // margin-bottom: 64px;
+
+    & > li {
+      box-sizing: border-box;
+      padding: 20px;
+      width: 300px;
+      height: 324px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      color: #333333;
+      display: block;
+
+      .img-wrap {
+        // 固定高度 讓下方標題能在同一水平
+        width: 260px;
+        height: 160px;
+        display: flex;
+        // 讓裡面的圖片垂直水平致中
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        // 標題也水平致中
+        display: flex;
+        justify-content: center;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      ul li {
+        list-style: disc;
+        font-size: 14px;
+        margin: 3px 0 0 20px;
+      }
+    }
+  }
+
+  // 比較表格
+  .compare-table {
+    // margin-bottom: 64px;
+    h3 {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    table {
+      width: 842px;
+      margin: 0 auto;
+
+      td {
+        text-align: left;
+        line-height: 36px;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        border-collapse: collapse;
+        color: #333333;
+      }
+
+      tr .item {
+        padding-left: 25px;
+      }
+
+      thead td {
+        background-color: #f7f7f7;
+        font-weight: 600;
+      }
+
+      .green {
+        color: #00a67d;
+      }
+    }
+  }
+
+  // 聯繫區
+  .contact {
+    box-sizing: border-box;
+    background-image: linear-gradient(#00644b, #009871);
+    padding: 40px 20px 28px 20px;
+    // margin-bottom: 64px;
+    p {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      line-height: 30px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-evenly;
+
+      .self-info {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          margin-bottom: 10px;
+          color: #ffffff;
+        }
+
+        input {
+          margin-bottom: 10px;
+          box-sizing: border-box;
+          width: 460px;
+          font-size: 16px;
+          padding: 5px 0px 5px 5px;
+          border-radius: 3px;
+          border: 1px solid #ffffff;
+        }
+
+        button {
+          cursor: pointer;
+          margin-top: 20px;
+          width: 62px;
+          box-sizing: border-box;
+          border: 1px solid #00cc99;
+          border-radius: 3px;
+          align-self: flex-end;
+          background-color: #00cc99;
+          color: #ffffff;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// 尾部區
+.footer-wrapper {
+  .footer {
+    padding: 26px 20px 55px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    span {
+      color: #e12d80;
+    }
+  }
+}
